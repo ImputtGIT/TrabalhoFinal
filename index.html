@@ -1,65 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GKNew Corp - Portal de Tecnologia</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <!-- Cabeçalho da página -->
     <header>
-        <h1>GKNew Corp</h1>
+        <h1>GKNew Corp</h1> <!-- Título principal da página, nome da empresa -->
+
+        <!-- Barra de navegação -->
         <nav>
+            <!-- Links para outras páginas do site -->
             <a href="index.html">Início</a>
             <a href="noticia1.html">Inteligência Artificial</a>
             <a href="noticia2.html">Games / VR</a>
             <a href="noticia3.html">Cibersegurança</a>
         </nav>
     </header>
+    <br>
 
+
+    <!-- Corpo principal da página -->
     <main>
+        <!-- Seção de introdução ao portal -->
         <section class="intro">
-            <h1>Bem-vindo ao GKNew Corp</h1>
-            <p>Seu portal de tecnologia com as últimas novidades em Inteligência Artificial, Games, Realidade Virtual e Cibersegurança. Fique por dentro do futuro da inovação!</p><br><br>
+            <h1>Bem-vindo ao GKNew Corp</h1> <!-- Título de boas-vindas -->
+            <p>Seu portal de tecnologia com as últimas novidades em Inteligência Artificial, Games, Realidade Virtual e
+                Cibersegurança. Fique por dentro do futuro da inovação!</p><br><br>
             <h2 class="subtitulo">Confira as principais notícias do site GKNEW Corp</h2>
+            <!-- Subtítulo para introduzir as notícias principais -->
         </section>
 
-        <!-- DESTAQUES -->
+        <!-- Seção de destaques com as notícias principais -->
         <section class="destaques">
+            <!-- Destaque para Inteligência Artificial -->
             <section>
                 <img id="IMGIA1" src="img/IMGIA1.png" alt="Inteligência Artificial">
-                <h3>Avanços em Inteligência Artificial</h3>
-                <p>A IA está transformando a forma como interagimos com a tecnologia...</p>
-                <a href="noticia1.html">Leia mais</a>
+                <!-- Imagem relacionada ao tema IA -->
+                <h3>Avanços em Inteligência Artificial</h3> <!-- Título do destaque -->
+                <p>A IA está transformando a forma como interagimos com a tecnologia...</p> <!-- Descrição breve -->
+                <a href="noticia1.html">Leia mais</a> <!-- Link para ler a notícia completa sobre IA -->
             </section>
 
+            <!-- Destaque para Games e Realidade Virtual -->
             <section>
                 <img id="IMGGAMES1" src="img/IMGGAMES1.png" alt="Games e VR">
-                <h3>O Futuro dos Games e Realidade Virtual</h3>
-                <p>Novas tecnologias prometem experiências imersivas como nunca antes...</p>
-                <a href="noticia2.html">Leia mais</a>
+                <!-- Imagem relacionada ao tema Games/VR -->
+                <h3>O Futuro dos Games e Realidade Virtual</h3> <!-- Título do destaque -->
+                <p>Novas tecnologias prometem experiências imersivas como nunca antes...</p> <!-- Descrição breve -->
+                <a href="noticia2.html">Leia mais</a> <!-- Link para ler a notícia completa sobre Games/VR -->
             </section>
 
+            <!-- Destaque para Cibersegurança -->
             <section>
                 <img id="IMGCIBER1" src="img/IMGCCIBER1.png" alt="Cibersegurança">
-                <h3>Cibersegurança em 2025</h3>
-                <p>Com o aumento das ameaças digitais, proteger dados se torna essencial...</p>
-                <a href="noticia3.html">Leia mais</a>
+                <!-- Imagem relacionada ao tema Cibersegurança -->
+                <h3>Cibersegurança em 2025</h3> <!-- Título do destaque -->
+                <p>Com o aumento das ameaças digitais, proteger dados se torna essencial...</p> <!-- Descrição breve -->
+                <a href="noticia3.html">Leia mais</a> <!-- Link para ler a notícia completa sobre Cibersegurança -->
             </section>
         </section>
 
-        <!-- CARROSSEL DE IMAGENS -->
-        <section class="carrossel">
-            <img src="img/IMGIA1.png" class="slide ativo" alt="Imagem IA">
-            <img src="img/IMGGAMES1.png" class="slide" alt="Imagem Games">
-            <img src="img/IMGCCIBER1.png" class="slide" alt="Imagem Cibersegurança">
-        </section>
-    </main>
+      <!-- Seção do carrossel de imagens -->
+    <section class="carrossel">
+        <!-- Imagens do carrossel, exibindo os temas de IA, Games/VR e Cibersegurança -->
+        <img src="img/IMGIA1.png" class="slide ativo" alt="Imagem IA"> <!-- Imagem de Inteligência Artificial -->
+        <img src="img/IMGGAMES1.png" class="slide" alt="Imagem Games"> <!-- Imagem de Games e VR -->
+        <img src="img/IMGCCIBER1.png" class="slide" alt="Imagem Cibersegurança"> <!-- Imagem de Cibersegurança -->
+
+        <!-- Botões de navegação -->
+        <button class="prev" onclick="mudarImagem(-1)">←</button>
+        <button class="next" onclick="mudarImagem(1)">→</button>
+    </section>
     <br>
+
+    <!-- Rodapé da página -->
     <footer>
-        <p>&copy; 2025 GKNew Corp - Portal de Tecnologia</p>
+        <p>&copy; 2025 GKNew Corp - Portal de Tecnologia</p> <!-- Aviso de copyright da página -->
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Inclusão do arquivo JavaScript externo -->
+    <script src="js/script.js"></script> <!-- Script para funcionalidades interativas -->
 </body>
-</html>
