@@ -93,7 +93,7 @@ header nav a:hover { color: #2B4C7E; } /* cor hover */
 
 .slide.ativo { display: block; } /* slide visível */
 
-/* ====== IMAGENS INICIAIS ====== */
+/* Estilo das imagens do carrossel */
 #IMGIA1, #IMGGAMES1, #IMGCIBER1 {
     width: 90%; /* largura 90% */
     max-width: 400px; /* máximo 400px */
@@ -102,6 +102,32 @@ header nav a:hover { color: #2B4C7E; } /* cor hover */
     display: block; /* block element */
     margin: 10px auto; /* centralizado horizontal */
     border-radius: 12px; /* bordas arredondadas */
+}
+
+/* ====== ESTILO DOS BOTÕES DE NAVEGAÇÃO ====== */
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5); /* fundo semi-transparente */
+    color: white; /* texto branco */
+    border: none;
+    padding: 15px; /* tamanho do botão */
+    cursor: pointer;
+    font-size: 25px; /* tamanho do texto */
+    transform: translateY(-50%); /* centraliza verticalmente */
+    z-index: 10; /* garante que o botão fique em cima da imagem */
+}
+
+.prev {
+    left: 10px; /* botão à esquerda */
+}
+
+.next {
+    right: 10px; /* botão à direita */
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* muda cor ao passar o mouse */
 }
 
 /* ====== PÁGINAS DE NOTÍCIA ====== */
