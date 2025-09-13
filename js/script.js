@@ -1,27 +1,32 @@
-// ===== CARROSSEL =====
-
-// pega todas as imagens do carrossel
+// Pega todas as imagens do carrossel
 let slides = document.querySelectorAll('.slide'); 
 
-// índice do slide atual
+// Índice do slide atual
 let indice = 0; 
 
-// mostra apenas o slide indicado
+// Função para mostrar o slide
 function showSlide(i) {
-    slides.forEach(sl => sl.classList.remove('ativo')); // esconde todos slides
-    slides[i].classList.add('ativo'); // mostra slide i
+    slides.forEach(sl => sl.classList.remove('ativo')); // Esconde todos os slides
+    slides[i].classList.add('ativo'); // Exibe o slide atual
 }
 
-// troca automaticamente a cada 3 segundos
-setInterval(() => {
-    indice++; // próximo slide
-    if(indice >= slides.length) indice = 0; // reinicia se fim
-    showSlide(indice); // atualiza exibição
-}, 3000); // intervalo 3s
+// Função para alterar o slide com base na direção (+1 ou -1)
+function mudarImagem(direcao) {
+    // Atualiza o índice com base na direção (avança ou retrocede)
+    indice += direcao;
 
+    // Garante que o índice seja cíclico (vai do primeiro ao último slide e vice-versa)
+    if (indice < 0) {
+        indice = slides.length - 1; // Vai para o último slide
+    } else if (indice >= slides.length) {
+        indice = 0; // Vai para o primeiro slide
+    }
 
+    showSlide(indice); // Atualiza a exibição do slide
+}
 
-
+// Inicializa o carrossel, mostrando o primeiro slide
+showSlide(indice);
 
 
 // ===== LEIA MAIS =====
@@ -35,3 +40,5 @@ function toggleTexto(id) {
         texto.style.display = "none"; // esconde texto
     }
 }
+
+
